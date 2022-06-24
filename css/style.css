@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Sinistre";
-    src: url("assets/Sinistre-StCaroline.woff2") format("woff2"), url("assets/Sinistre-StCaroline.woff") format("woff");
+    src: url("Sinistre-StCaroline.woff2") format("woff2"), url("Sinistre-StCaroline.woff") format("woff");
 }
 
 
@@ -570,7 +570,7 @@ de {
 
 .name fb-image {
     display: none;
-    background: url(assets/fbface.gif);
+    background: url(fbface.gif);
     height: calc(100vh - (var(--font-size-medium) + (4 * var(--padding)) + 20px));
     top: var(--padding);
     left: var(--padding);
