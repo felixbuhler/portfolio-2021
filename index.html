@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Felix Buhler</title>
+    <meta name="author" content="Felix Buhler">
+    <meta name="description" content="I'm Felix Buhler, multi-disciplinary designer living and working in Kreuzberg, Berlin.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400+600&display=swap" rel="stylesheet">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="header.js"></script>
+</head>
+
+<body onload="startTime();">
+    <header padding-border no-border>
+        <header-column>Felix Buhler</header-column>
+        <header-column>
+            <div class="color-change">
+                <div>👹</div>
+            </div>
+        </header-column>
+        <header-column align-right><span id="time"></span></header-column>
+        <div class="clear"></div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Intro Text -->
+        <content-panel padding-border no-border>
+            <text name="intro">✴&#xFE0E; I'm
+                <font-serif class="name">
+                    <fb-image></fb-image>Felix Buhler</font-serif> — multi-disciplinary designer living and working in
+                <font-serif>Kreuzberg, Berlin</font-serif>
+                <de>DE</de>. I do type-heavy work in the fields of
+                <font-serif>Motion Design, Print Design, 3D</font-serif> and
+                <font-serif>Augmented Reality</font-serif>. I also create
+                <font-serif>Face Effects</font-serif> for <a title="@felixbuhler on Instagram" href="http://instagram.com/felixbuhler/">Instagram</a> 𓁷.</text>
+        </content-panel>
+        <helper clear></helper>
+        <!-- Info -->
+        <!-- Info > Left -->
+        <content-panel half-width padding-border align-center>
+            <text align-center>Since 2/2019 I am an
+                <font-serif>Art Director</font-serif> at <a href="https://formdusche.de" title="formdusche — studio für gestaltung">Formdusche</a> in Berlin. Prior, I worked and lived in Leipzig and Ravensburg, where I also did a Duales Studium at <a href="">Mediendesign Ravensburg</a>. You can buy my artwork <a href="https://www.shop.felix-buhler.de" title="Shop">here</a>.</text>
+        </content-panel>
+        <!-- Info > Right -->
+        <content-panel half-width padding-border align-center>
+            <text>I worked for clients like
+                <font-serif>
+                    <div id="clients"></div>
+                </font-serif> <i>and many more</i>.</text>
+        </content-panel>
+        <helper clear></helper>
+        <!-- Contact -->
+        <content-panel padding-border italic align-center>
+            <text>Let's connect on <a title="@felixbuhler on Instagram" href="http://instagram.com/felixbuhler/">Instagram</a> or via <a title="Write me an eMail" href="mailmailmail.php">Mail</a>.</text>
+        </content-panel>
+        <helper clear></helper>
+        <!-- Projects -->
+        <content-panel no-border name="projects-headline">
+            <text name="title-projects">Projects</text>
+            <helper clear></helper>
+            <!-- I just flip the switch, flip flip -->
+            <label class="switch">
+                <input type="checkbox" class="checkcheck"> <span class="slider round"><text name="switch">Show Images & Info</text></span> </label>
+            <helper clear></helper>
+        </content-panel>
+        <content-panel padding-border no-border half-width name="projects">
+            <!-- Die Tür -->
+            <project-entry> <img src="assets/projects/die-tuer.jpg" class="thumb">
+                <project-title><a title="Die Tür on Behance" href="https://www.behance.net/gallery/56392735/Die-Wichtigkeit-des-Banalen-Die-Tuer" target="_blank" rel="noopener">Die Tür</a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag filled>Bachelor</p-tag>
+                        <p-tag>2017</p-tag>
+                        <p-tag>Graphic • 3D • Editorial • Typography</p-tag>
+                        <p-tag>@ Mediendesign Ravensburg</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>»Die Wichtigkeit des Banalen — Die Tür« (The importance of the trivial — The door) is a project about an object we encounter everyday in many different ways: we pass them, we decorate them, we make them safe and safer, we bang them. It is a project about the door, what it means to us and our lives. </project-text>
+                </project-info>
+            </project-entry>
+            <!-- DDC Gute Gestaltung 2019 -->
+            <project-entry>
+                <a title="DDC Gute Gestaltung 2019 on formdusche" href="https://formdusche.de/work/ddc-gute-gestaltung-2019/" target="_blank" rel="noopener"> <img src="assets/projects/ddc2019.jpg" class="thumb">
+                    <project-title>DDC Gute Gestaltung 2019</project-title>
+                    <project-info>
+                        <project-tags>
+                            <p-tag filled>℅ formdusche</p-tag>
+                            <p-tag filled>Client: Deutscher Designer Club</p-tag>
+                            <p-tag>2020</p-tag>
+                            <p-tag>Editorial</p-tag>
+                            <p-tag>Featured in Slanted</p-tag>
+                            <p-tag>Featured at EDCH Talks</p-tag>
+                            <helper clear></helper>
+                        </project-tags>
+                        <project-text>For the 2019 edition of the DDC MAG, the aim was not »be different«, but »fit to use«. Inspiration was found in the architecture collective Brandlhuber+. Its approach: conquering places and building spaces by reusing or changing what is given. Material focus: concrete. In the middle of the COVID lockdown, we got our hands dirty in the home office, creating molds and forming letters from concrete. Fascinated by the special features of the concrete artifacts, we ask the question: How do we want to live? What comes after the concrete? </project-text>
+                    </project-info>
+                </a>
+            </project-entry>
+            <!-- SPEKTRUM Werkschau -->
+            <project-entry> <img src="assets/projects/spektrum.gif" class="thumb">
+                <project-title> <a title="SPEKTRUM Werkschau on Behance" href="https://www.behance.net/gallery/58956519/Spektrum-Werkschau" target="_blank" rel="noopener">SPEKTRUM Werkschau</a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag filled>w/ Nicolas Bernklau & Tobias Held</p-tag>
+                        <p-tag filled>Client: Mediendesign Ravensburg</p-tag>
+                        <p-tag>2017</p-tag>
+                        <p-tag>Exhibition • Graphic • System</p-tag>
+                        <p-tag>Displayed at Weltformat 17</p-tag>
+                        <p-tag>Featured on themovingposter.com</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>A modular design system was created for the retrospective of the MD14 course in media design at DHBW Ravensburg. A5 fields can be combined at will to form posters and a guidance system. The use of chrome paper reflects the surroundings and the monochrome design illuminates the entire color spectrum. The DIN A5 format enabled us to create a system that could be quickly adapted to the respective requirement. </project-text>
+                </project-info>
+            </project-entry>
+            <!-- DDC Gute Gestaltung 19 -->
+            <project-entry>
+                <a title="DDC Gute Gestaltung 19 on formdusche" href="https://formdusche.de/work/ddc-19/" target="_blank" rel="noopener"> <img src="assets/projects/ddc19.jpg" class="thumb">
+                    <project-title>DDC Gute Gestaltung 19</project-title>
+                    <project-info>
+                        <project-tags>
+                            <p-tag filled>℅ formdusche</p-tag>
+                            <p-tag filled>Client: Deutscher Designer Club</p-tag>
+                            <p-tag>2019</p-tag>
+                            <p-tag>Editorial • 3D</p-tag>
+                            <helper clear></helper>
+                        </project-tags>
+                        <project-text>The 19th edition of the DDC Magalog continues with a twin brochure. »What's next?« was the question the year before, now »That's next« becomes more tangible: Artificial 3D type gives us multiple points of view and illuminates many perspectives. With a variable font we have a playful moment of change.</project-text>
+                    </project-info>
+                </a>
+            </project-entry>
+            <!-- Lighter -->
+            <project-entry> <img src="assets/projects/lighter.jpg" class="thumb">
+                <project-title>Lighter</project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag>2020</p-tag>
+                        <p-tag>Merch</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>A lighter that also can be used as a business card.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- PL—AGV3 -->
+            <project-entry> <img src="assets/projects/plague.png" class="thumb">
+                <project-title> <a title="PL—AGV3 on Behance" href="https://www.behance.net/gallery/75283517/PLAGV3" target="_blank" rel="noopener">PL—AGV3</a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag>2018</p-tag>
+                        <p-tag>3D • Character • Packaging • Editorial</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>The PL-AGV3 body suit deals with the increasing pollution of our lives. Climate change dries up the soil, causes the sun to burn from the sky, temperatures rise and large ice deposits melt. There are strong droughts on one side and devastating floods on the other. But the pollution does not just come from the environment. Every day we are bombarded with advertising and products. People dictate to us what is good, what we have to buy, what we need to look like. Hate is on the increase and people are becoming more and more divided. People stop vaccinating their children against dangerous diseases, and so come back deadly dangers. War is no longer conducted on the field, but with chemical and biological weapons from afar. Water and food are contaminated and unconsumable.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- eos chamber orchestra -->
+            <project-entry> <img src="assets/projects/eos.gif" class="thumb">
+                <project-title> <a title="eos chamber orchestra on formdusche" href="https://formdusche.de/work/eos-chamber-orchestra/" target="_blank" rel="noopener"> eos chamber orchestra</a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag filled>℅ formdusche</p-tag>
+                        <p-tag filled>Client: eos chamber orchestra</p-tag>
+                        <p-tag>2020</p-tag>
+                        <p-tag>Branding • Web • 3D • Motion</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>The eos chamber orchestra develops progressive concepts beyond the traditional concert business: Genre boundaries are overturned, new worlds of sound are created. Formdusche created a branding that translates eos' approach in a visible form. Abstract, fluid forms generate a cosmos of light, color and spatial depth.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- Glaskasten Marl -->
+            <project-entry> <img src="assets/projects/glaskasten-marl.gif" class="thumb">
+                <project-title><a title="Glaskasten Marl on Behance" href="https://www.behance.net/gallery/51857431/Glaskasten-Marl" target="_blank" rel="noopener"> Glaskasten Marl </a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag filled>@ Mediendesign Ravensburg</p-tag>
+                        <p-tag>2017</p-tag>
+                        <p-tag>Branding • Graphic • Animation</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>Fictional task: Create a new visual identity for the »Skulpturenmuseum Glaskasten Marl«. Using different points of view, the cube is focus of the branding.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- Memphis House -->
+            <project-entry>
+                <a title="Memphis House on Bandcamp" href="https://cosmic-compositions.bandcamp.com/album/memphis-house" target="_blank" rel="noopener"> <img src="assets/projects/memphishouse.jpg" class="thumb">
+                    <project-title>DJ Gran Sport — Memphis House</project-title>
+                    <project-info>
+                        <project-tags>
+                            <p-tag filled>Client: Cosmic Compositions</p-tag>
+                            <p-tag>2020</p-tag>
+                            <p-tag>Graphic • Type • Packaging</p-tag>
+                            <helper clear></helper>
+                        </project-tags>
+                        <project-text>An artwork for Cosmic Compositions.
+                            <br>
+                            <br>
+                            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1786303548/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://cosmic-compositions.bandcamp.com/album/memphis-house">Memphis House by DJ GRAN SPORT</a></iframe>
+                        </project-text>
+                    </project-info>
+                </a>
+            </project-entry>
+            <!-- Good Die, My Friend -->
+            <project-entry> <img src="assets/projects/gdmf.gif" class="thumb">
+                <project-title> <a title="Good Die, My Friend on Behance" href="https://www.behance.net/gallery/43394767/Good-Die-My-Friend" target="_blank" rel="noopener">Good Die, My Friend  </a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag filled>w/ Laura Klinke & Daniela Koltermann</p-tag>
+                        <p-tag>2016</p-tag>
+                        <p-tag>Motion • Sound</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>In the tragicomedy »Good Die My Friend« a supposedly trivial competition between two neighbors comes to an escalation. Disregarding their surroundings, both of them destroy, driven by greed, their own habitat until a catastrophe is inevitable.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- Sag, Meister -->
+            <project-entry> <img src="assets/projects/sag-meister.png" class="thumb">
+                <project-title> <a title="Sag, Meister on Behance" href="https://www.behance.net/gallery/29794905/Sag-Meister" target="_blank" rel="noopener">Sag, Meister</a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag filled>@ Mediendesign Ravensburg</p-tag>
+                        <p-tag>2015</p-tag>
+                        <p-tag>Interactive • Installation • Graphic</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>Sag, Meister is the result of a three-month preoccupation with the famous designer Stefan Sagmeister. The project consists of 4 augmented posters for a fictional talk series that each display on important aspect of Sagmeisters work or person.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- LTT: Curriculum In Pictures -->
+            <project-entry> <img src="assets/projects/curriculum.jpg" class="thumb">
+                <project-title><a title="A Curriculum In Pictures on Behance" href="https://www.behance.net/gallery/49661939/Lunchtime-Talk-A-Curriculum-In-Pictures" target="_blank" rel="noopener"> A Curriculum In Pictures </a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag filled>Lunchtime Talk</p-tag>
+                        <p-tag filled>Client: Mediendesign Ravensburg</p-tag>
+                        <p-tag>2017</p-tag>
+                        <p-tag>Graphic</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>Poster design for the lunchtime talk with Prof. Jimmy Schmid from the Hochschule der Künste Bern (HKB).</project-text>
+                </project-info>
+            </project-entry>
+            <!-- LTT: Let's Get Physical -->
+            <project-entry> <img src="assets/projects/physical.png" class="thumb">
+                <project-title><a title="Let's Get Physical on MDRV" href="http://www.mediendesign-ravensburg.de/lunchtime-talk-lets-get-physical-mit-andreas-muxel/">Let's Get Physical</a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag filled>Lunchtime Talk</p-tag>
+                        <p-tag filled>Client: Mediendesign Ravensburg</p-tag>
+                        <p-tag>2018</p-tag>
+                        <p-tag>Graphic</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>Poster design for the lunchtime talk with Prof. Andreas Muxel, Augsburg/Köln.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- LTT: Applied Freedom -->
+            <project-entry>
+                <a title="Applied Freedom on MDRV" href="http://www.mediendesign-ravensburg.de/lunchtime-talk-applied-freedom-mit-gregor-kuschmirz/" target="_blank" rel="noopener"> <img src="assets/projects/applied.jpg" class="thumb">
+                    <project-title>Applied Freedom</project-title>
+                    <project-info>
+                        <project-tags>
+                            <p-tag filled>Lunchtime Talk</p-tag>
+                            <p-tag filled>Client: Mediendesign Ravensburg</p-tag>
+                            <p-tag>2020</p-tag>
+                            <p-tag>Graphic • 3D • Motion • AR</p-tag>
+                            <helper clear></helper>
+                        </project-tags>
+                        <project-text>Poster design for the lunchtime talk with Gregor Kuschmirz. I also created an Instagram face effect and animated version.</project-text>
+                    </project-info>
+                </a>
+            </project-entry>
+            <!-- Hävitetty -->
+            <project-entry> <img src="assets/projects/moonsorrow.gif" class="thumb">
+                <project-title>V • Hävitetty</project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag>2019</p-tag>
+                        <p-tag>Graphic • 3D</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>Uncommissioned artwork for Moonsorrow.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- Aufstiege Trailer -->
+            <project-entry>
+                <project-title><a title="Aufstiege Trailer on Vimeo" href="https://vimeo.com/181072942" target="_blank" rel="noopener">Aufstiege</a></project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag>2017</p-tag>
+                        <p-tag>Sound</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>Soundtrack for the »Aufstiege« trailer, designed by Nicolas Bernklau and Tobias Held.</project-text>
+                </project-info>
+            </project-entry>
+            <!-- ECHO WERKSCHAU -->
+            <project-entry>
+                <project-title>ECHO Werkschau</project-title>
+                <project-info>
+                    <project-tags>
+                        <p-tag>2018</p-tag>
+                        <p-tag>Sound</p-tag>
+                        <helper clear></helper>
+                    </project-tags>
+                    <project-text>Soundtrack for the »Filmrolle« during the ECHO Werkschau at Mediendesign Ravensburg.
+                        <br>
+                        <br>
+                        <audio src="assets/projects/echo.aif" controls></audio>
+                    </project-text>
+                </project-info>
+            </project-entry>
+            <!-- Entries End -->
+        </content-panel>
+        <helper clear></helper>
+    </main>
+    <!-- Footer -->
+    <footer padding-border>&copy; 2021 <a title="Shop" href="https://www.shop.felix-buhler.de">Shop</a><a title="Write me an eMail" href="mailmailmail.php">Mail</a><a title="@felixbuhler on Instagram" href="http://instagram.com/felixbuhler/">Instagram</a><a title="Imprint" href="imprint">Imprint & Privacy</a></footer>
+    <!-- SCRIPT -->
+    <script src="footer.js"></script>
+    <script>
+        $('img.thumb').hide(0);
+        $('project-info').hide(0);
+        $('.checkcheck').click(function () {
+            this.checked ? $('img.thumb').show(500) : $('img.thumb').hide(500); //time for show
+            this.checked ? $('project-info').show(500) : $('project-info').hide(500); //time for show
+        });
+    </script>
+</body>
+
+</html>
